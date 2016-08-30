@@ -13,4 +13,5 @@ RUN gem install fakes3 -v 0.2.4
 RUN mkdir -p /fakes3_root
 ENTRYPOINT ["/usr/local/bin/fakes3"]
 CMD ["-r",  "/fakes3_root", "-p",  "4569"]
+VOLUME ["/fakes3_root"]
 EXPOSE 4569
